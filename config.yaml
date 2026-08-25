@@ -1,0 +1,61 @@
+# Path to your Kingdom Come: Deliverance installation
+# Common locations on Linux:
+#   - ~/.steam/steam/steamapps/common/KingdomComeDeliverance
+#   - ~/.local/share/Steam/steamapps/common/KingdomComeDeliverance
+#   - ~/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/KingdomComeDeliverance
+# Common locations on Windows:
+#   - C:\Program Files (x86)\Steam\steamapps\common\KingdomComeDeliverance
+#   - C:\Program Files\Steam\steamapps\common\KingdomComeDeliverance
+#   - D:\SteamLibrary\steamapps\common\KingdomComeDeliverance
+# Leave empty for auto-detection on first run
+GamePath:
+
+# Path to your Mods folder
+# Usually: [GamePath]/Mods (Linux) or [GamePath]\Mods (Windows)
+# Leave empty for auto-detection on first run
+ModsPath:
+
+# Name of the merged mod folder (created in ModsPath)
+# Default: KCDMerge
+OutputPath: "KCDMerge"
+
+# Whether to overwrite the output directory if it exists
+# Default: true
+OverwriteOutput: true
+
+# Automatically open the log file after merge completes
+# Default: false
+OpenLogFileAfterMerge: false
+
+# Number of log files to keep (0 = keep all)
+# Default: 3
+LogRetentionCount: 3
+
+# Minimum log level written to the .log file
+# Valid values: Verbose, Debug, Information, Warning, Error
+# Console always shows Information and above regardless of this setting
+# Default: Information
+FileLogLevel: "Information"
+
+# Temporary directory for staging files during merge
+# On Linux: /tmp/KCDMerge (or $TMPDIR/KCDMerge)
+# On Windows: %TEMP%\KCDMerge
+# Subfolders Staging and Staging_localization are created automatically
+# Default: %TEMP%\KCDMerge (automatically resolved to /tmp/KCDMerge on Linux)
+TempPath: "%TEMP%\\KCDMerge"
+
+# Clean up temporary files after successful merge
+# Default: true
+TempCleanUp: true
+
+# Output mode for merged table XML files
+# Full: Full table replacement + .tbl — replaces entire vanilla table
+# PTF: Patched Table Files (Recommended) — only changed rows, maximum compatibility with other mods
+# In PTF mode, tables that cannot be expressed as PTF (deletions, hash tables, non-table XML)
+# automatically fall back to Full for that specific file.
+# Default: PTF
+OutputMode: "PTF"
+
+# Staleness check mode: Off, WarnOnly, Prompt
+# Default: WarnOnly
+StalenessCheckMode: "WarnOnly"
