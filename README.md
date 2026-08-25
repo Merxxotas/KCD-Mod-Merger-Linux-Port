@@ -1,7 +1,7 @@
 # KCDMerge (Linux Port)
 
 [![Build, Test & Release](https://github.com/Merxxotas/KCD-Mod-Merger-Linux-Port/actions/workflows/build.yml/badge.svg)](https://github.com/Merxxotas/KCD-Mod-Merger-Linux-Port/actions/workflows/build.yml)
-[![Latest Release](https://img.shields.io/github/v/release/Merxxotas/KCD-Mod-Merger-Linux-Port?label=release)](https://github.com/Merxxotas/KCD-Mod-Merger-Linux-Port/releases)
+[![Latest Release](https://img.shields.io/github/v/release/Merxxotas/KCD-Mod-Merger-Linux-Port?logo=github&label=release)](https://github.com/Merxxotas/KCD-Mod-Merger-Linux-Port/releases)
 
 **Native cross-platform automatic mod merger for Kingdom Come: Deliverance on Linux**
 
