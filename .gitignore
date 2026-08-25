@@ -23,6 +23,7 @@ release/
 *.tmp
 temp/
 Temp/
+.temp/
 
 # Tool installations
 .dotnet/
