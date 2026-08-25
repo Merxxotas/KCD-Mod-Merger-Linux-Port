@@ -1,0 +1,28 @@
+# .NET build artifacts
+[Bb]in/
+[Oo]bj/
+publish/
+dist/
+release/
+
+# IDE / Editor files
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# AppImage and packaging artifacts
+*.AppImage
+*.AppDir/
+
+# Logs and temp files
+*.log
+*.tmp
+temp/
+Temp/
+
+# Tool installations
+.dotnet/
