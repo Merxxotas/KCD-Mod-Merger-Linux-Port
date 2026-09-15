@@ -14,7 +14,7 @@ if ! command -v dotnet &>/dev/null; then
     exit 1
 fi
 
-VERSION="1.4.1"
+VERSION="1.4.2"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
@@ -47,6 +47,8 @@ cp config.yaml "$RELEASE_DIR/"
 cp config_template.yaml "$RELEASE_DIR/"
 cp README.md "$RELEASE_DIR/"
 cp LICENSE "$RELEASE_DIR/"
+[ -f CHANGELOG.md ] && cp CHANGELOG.md "$RELEASE_DIR/"
+[ -f RELEASE_NOTES.md ] && cp RELEASE_NOTES.md "$RELEASE_DIR/"
 
 tar -czf "dist/KCDMerge-v${VERSION}-linux-x64.tar.gz" -C dist "KCDMerge-v${VERSION}-linux-x64"
 rm -rf "$RELEASE_DIR"

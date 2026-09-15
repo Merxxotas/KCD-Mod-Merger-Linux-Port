@@ -171,7 +171,7 @@ Run the included build script:
 This will:
 1. Run all xUnit unit tests.
 2. Compile and publish a self-contained single-file Linux executable to `publish/linux-x64/KCDMerge`.
-3. Package a distributable `.tar.gz` archive to `dist/KCDMerge-v1.4.1-linux-x64.tar.gz`.
+3. Package a distributable `.tar.gz` archive to `dist/KCDMerge-v1.4.2-linux-x64.tar.gz`.
 
 ---
 
