@@ -78,6 +78,12 @@ public class ModOutputBuilder
 				continue;
 			}
 			string text = modFileSource?.BaseFileName ?? item;
+			string normalized = text.Replace('\\', '/');
+			if (!normalized.StartsWith("Libs/Tables/", StringComparison.OrdinalIgnoreCase))
+			{
+				Log.Debug("Skipped TBL for non-table XML: {FileName}", text);
+				continue;
+			}
 			if (ptfOutputFiles != null && ptfOutputFiles.Contains(text))
 			{
 				num2++;

@@ -17,6 +17,7 @@ When you install multiple mods in Kingdom Come: Deliverance that modify the same
 - **Universal & Self-Contained** — Includes the .NET runtime bundled inside. Works on Arch, Ubuntu, Fedora, Debian, openSUSE, SteamOS / Steam Deck, and any modern Linux distribution out of the box with zero dependencies.
 - **Smart Conflict Resolution** — Merges row-level attributes automatically, and remembers your choices in `ModConflictRules.yaml` when mod changes conflict.
 - **Patched Table Files (PTF) & Full XML support** — Generates optimized PTF patches for maximum game compatibility.
+- **CryEngine Subsystem Protection** — Safely restricts `.tbl` override creation exclusively to `Libs/Tables/`, preventing keybinding corruption (`Libs/Config/`) and UI freezes (`Libs/UI/`).
 - **Auto-Detection** — Automatically finds native Steam, Flatpak Steam, multi-library Steam mounts, Heroic, Lutris, and Proton installations.
 
 ---
